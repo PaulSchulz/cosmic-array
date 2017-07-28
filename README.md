@@ -24,7 +24,7 @@ espeak
 cd
 mkdir git
 cd git
-git clone git@github.com:PaulSchulz/cosmic-array.git cosmic-array
+git clone https://github.com/PaulSchulz/cosmic-array.git
 cd cosmic-array
 make
 cd config
