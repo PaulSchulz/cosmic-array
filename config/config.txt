@@ -1,0 +1,2 @@
+# Append to /boot/config.txt
+dtoverlay=pwm-2chan,pin=12,func=2,pin2=13,func2=4

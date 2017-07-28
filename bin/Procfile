@@ -1,0 +1,3 @@
+cosmic-array-play: ./cosmic-array-play
+cosmic-array-send: ./cosmic-array-send block 3333 test.`hostname`.1
+
