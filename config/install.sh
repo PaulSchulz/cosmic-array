@@ -5,7 +5,7 @@ cd ${0%/*}
 sudo apt update
 sudo apt install espeak
 
-if [ `arch` = "armv7l" ]; then
+if [ `arch` = "armv7l" ] || [ `arch` = "armv6l" ]; then
     # Set @reboot function
     crontab crontab.pi
 
