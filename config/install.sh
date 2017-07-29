@@ -7,7 +7,7 @@ sudo apt install espeak
 
 if [ `arch` = "armv7l" ]; then
     # Set @reboot function
-    sudo crontab crontab.pi
+    crontab crontab.pi
 
     # Set audio overlay to send audio to PWM pins. 
     sudo bash -c "cat config.txt >> /boot/config.txt"
