@@ -16,3 +16,4 @@ if [ `arch` = "armv7l" ] || [ `arch` = "armv6l" ]; then
     sudo amixer -c 0 set PCM playback 100% unmute 
 fi
 
+sync; sync

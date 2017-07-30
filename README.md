@@ -26,7 +26,6 @@ mkdir git
 cd git
 git clone https://github.com/PaulSchulz/cosmic-array.git
 cd cosmic-array
-make
 cd config
 ./install.sh
 ```
@@ -47,4 +46,11 @@ cd config
 	- Configuration and Updates via Ansible.
 - Event Database
   	- Record data from events for later analysis.
-	- Output events data in other formats (CSV,Midi etc.)
+	- Output event data in other formats (CSV,Midi etc.)
+
+## Development
+### Building the code
+```
+cd git/cosmic-array/src
+make
+```
