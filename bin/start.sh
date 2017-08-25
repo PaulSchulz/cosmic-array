@@ -30,6 +30,7 @@ aplay audio/channel3.wav    >/dev/null 2>&1
 /usr/bin/espeak "Cosmic Array Sensor Online. Node name `hostname`" \
   >/dev/null 2>&1
 
+# $HOME/git/cosmic-array/bin/shoreman >shoreman.log 2>&1
 $HOME/git/cosmic-array/bin/shoreman >/dev/null 2>&1 
 
 
