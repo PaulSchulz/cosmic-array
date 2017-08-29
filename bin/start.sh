@@ -30,7 +30,7 @@ aplay audio/channel3.wav    >/dev/null 2>&1
 
 /usr/bin/espeak "Node name `hostname`" >/dev/null 2>&1
 
-WIFI=`ifconfig wifi0 | grep 'inet ' | awk '{ print $2 }'`
+WIFI=`ifconfig wlan0 | grep 'inet ' | awk '{ print $2 }'`
 /usr/bin/espeak "Wifi address $WIFI" >/dev/null 2>&1
 
 /usr/bin/espeak "Sensor Online" >/dev/null 2>&1
