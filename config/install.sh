@@ -13,7 +13,7 @@ if [ `arch` = "armv7l" ] || [ `arch` = "armv6l" ]; then
     sudo bash -c "cat config.txt >> /boot/config.txt"
 
     # Set Volume
-    sudo amixer -c 0 set PCM playback 100% unmute 
+    sudo amixer -c 0 set PCM playback 97% unmute 
 fi
 
 sync; sync
