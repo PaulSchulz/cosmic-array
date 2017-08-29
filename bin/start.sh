@@ -13,7 +13,8 @@ cd ${0%/*} #
 sudo amixer -c 0 set PCM playback 97% unmute >/dev/null 2>&1
 
 #######################################################################
-# Selftest
+/usr/bin/espeak "Cosmic Array Sensor Online" >/dev/null 2>&1
+
 /usr/bin/espeak "Channel 0" >/dev/null 2>&1
 aplay audio/channel0.wav    >/dev/null 2>&1
 
@@ -27,8 +28,7 @@ aplay audio/channel2.wav    >/dev/null 2>&1
 aplay audio/channel3.wav    >/dev/null 2>&1
 #######################################################################
 
-/usr/bin/espeak "Cosmic Array Sensor Online. Node name `hostname`" \
-  >/dev/null 2>&1
+/usr/bin/espeak "Node name `hostname`" >/dev/null 2>&1
 
 # $HOME/git/cosmic-array/bin/shoreman >shoreman.log 2>&1
 $HOME/git/cosmic-array/bin/shoreman >/dev/null 2>&1 
