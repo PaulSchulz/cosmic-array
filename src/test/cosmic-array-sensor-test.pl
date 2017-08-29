@@ -12,14 +12,14 @@ my $debug  = 0;
 my $dryrun = 0;
 
 my @events             = [0,1,2,3]; # Pins to toggle
-my $delay_mean         = 1000000; # Microseconds
-my $delay_variance     =  900000; #
+my $delay_mean         = 10000000; # Microseconds (10s)
+my $delay_variance     =  9000000; #
 
 my $cmd = "";
 
 sub event_distribution {
     my $event;
-    $event = int(rand(4));
+    $event = int(rand(3));
 
     return $event;
 }
@@ -31,7 +31,6 @@ sub delay_distribution {
     my $delay = $mean + $vary;
     
     return $delay;
-#    return random($mean-$variance,$mean+variance);
 }
 
 while(1){
