@@ -1,5 +1,5 @@
 cosmic-array-play: ./cosmic-array-play
 cosmic-array-send: ./cosmic-array-send 192.168.2.100 7001 `hostname`
-cosmic-array-remote: ./utils/cosmic-array-remote
+cosmic-array-remote: ./utils/splash-remote
 
 
