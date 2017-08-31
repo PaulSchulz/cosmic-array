@@ -24,8 +24,6 @@ aplay audio/channel1.wav    >/dev/null 2>&1
 /usr/bin/espeak "Channel 2" >/dev/null 2>&1
 aplay audio/channel2.wav    >/dev/null 2>&1
 
-/usr/bin/espeak "Channel 3" >/dev/null 2>&1
-aplay audio/channel3.wav    >/dev/null 2>&1
 #######################################################################
 
 /usr/bin/espeak "Node name `hostname`" >/dev/null 2>&1
