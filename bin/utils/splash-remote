@@ -1,0 +1,25 @@
+#!/bin/bash
+
+declare -A port
+
+port[block]="6999"
+port[cosmic-array-0-0]="7000"
+port[cosmic-array-1-1]="7011"
+port[cosmic-array-1-2]="7012"
+port[cosmic-array-1-3]="7013"
+port[cosmic-array-1-4]="7014"
+port[cosmic-array-2-1]="7021"
+port[cosmic-array-2-2]="7022"
+port[cosmic-array-2-3]="7023"
+port[cosmic-array-2-4]="7024"
+port[cosmic-array-3-1]="7031"
+port[cosmic-array-3-2]="7032"
+port[cosmic-array-3-3]="7033"
+port[cosmic-array-3-4]="7034"
+port[cosmic-array-4-1]="7041"
+port[cosmic-array-4-2]="7042"
+port[cosmic-array-4-3]="7043"
+port[cosmic-array-4-4]="7044"
+
+ssh iot.mawsonlakes.org -p 2222 -N -R ${port[`hostname`]}:localhost:22
+
