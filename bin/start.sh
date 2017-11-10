@@ -10,7 +10,7 @@ cd ${0%/*} #
 /usr/bin/gpio mode 1 tri
 /usr/bin/gpio mode 2 tri
 
-sudo amixer -c 0 set PCM playback 90% unmute >/dev/null 2>&1
+sudo amixer -c 0 set PCM playback 80% unmute >/dev/null 2>&1
 
 #######################################################################
 /usr/bin/espeak "Cosmic Array Sensor starting" >/dev/null 2>&1
