@@ -12,7 +12,8 @@ test:
 	./bin/cosmic-array-sensor-test
 
 version:
-	@echo software: `git describe --tags --long`
+	@echo "os-release:" `cat /etc/os-release | grep PRETTY_NAME | sed s/PRETTY_NAME=// | sed s/\"//g`
+	@echo "software:  " `git describe --tags --long`
 
 upgrade:
 	@git pull
