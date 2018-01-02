@@ -40,9 +40,9 @@ int main(int argc, char **argv) {
   wiringPiSetup();
   
   /* check command line arguments */
-  if (argc != 2) {
-    fprintf(stderr,"usage: %s <file>\n", argv[0]);
-    fprintf(stderr,"  Append event to file.\n");
+  if (argc != 1) {
+    fprintf(stderr,"usage: %s\n", argv[0]);
+    fprintf(stderr,"  Print event messages with timetamp.\n");
     exit(0);
   }
 
