@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <unistd.h>
 
 #include <wiringPi.h>
 
@@ -18,9 +19,9 @@ void error(char *msg) {
 void my_interrupt(int i) {
   struct timespec tms;
   clock_gettime(CLOCK_REALTIME,&tms);
-  printf("%d.%09d %d\n",
-	 tms.tv_sec,
-	 tms.tv_nsec);
+  printf("%"PRIdMAX".%06ld %d\n",
+	 (intmax_t)tms.tv_sec,
+	 round(tms.tv_nsec/1000));
 }
 
 void my_interrupt_0 (void) { my_interrupt(0); }
