@@ -9,7 +9,8 @@ SUBDIRS-x86_64 :=  \
 SUBDIRS-armv7l := \
   isr \
   play \
-  send
+  send \
+  log
 
 SUBDIRS := \
   $(SUBDIRS-any) \
