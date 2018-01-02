@@ -17,13 +17,10 @@ void error(char *msg) {
 /* interrupt functions */
 void my_interrupt(int i) {
   struct timespec tms;
-  if (clock_gettime(CLOCK_REALTIME,&tms)) {
-    return -1;
-  }
+  clock_gettime(CLOCK_REALTIME,&tms);
   printf("%d.%09d %d\n",
 	 tms.tv_sec,
 	 tms.tv_nsec);
-
 }
 
 void my_interrupt_0 (void) { my_interrupt(0); }
@@ -41,7 +38,7 @@ int main(int argc, char **argv) {
   /* check command line arguments */
   if (argc != 2) {
     fprintf(stderr,"usage: %s <file>\n", argv[0]);
-    fprintf(stderr,"  Append event to file.\n";
+    fprintf(stderr,"  Append event to file.\n");
     exit(0);
   }
 
@@ -55,7 +52,7 @@ int main(int argc, char **argv) {
   wiringPiISR (7, INT_EDGE_RISING, &my_interrupt_7) ;
 
   for(;;){
-    delay(100);
+    delay(1000);
   }
   return 0;
 }
