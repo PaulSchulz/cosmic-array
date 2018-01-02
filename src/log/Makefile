@@ -2,7 +2,7 @@
 
 all: cosmic-array-log
 
-cosmic-array-play: cosmic-array-log.c
+cosmic-array-log: cosmic-array-log.c
 	gcc -Wall -o $@ $< -lwiringPi
 	-cp cosmic-array-log ../../bin
 
