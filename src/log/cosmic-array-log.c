@@ -25,6 +25,7 @@ void my_interrupt(int i) {
 	 (intmax_t)tms.tv_sec,
 	 (long int)round(tms.tv_nsec/1000),
 	 i);
+  fflush(stdout);
 }
 
 void my_interrupt_0 (void) { my_interrupt(0); }
