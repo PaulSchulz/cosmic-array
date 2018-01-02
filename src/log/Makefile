@@ -3,7 +3,7 @@
 all: cosmic-array-log
 
 cosmic-array-log: cosmic-array-log.c
-	gcc -Wall -o $@ $< -lwiringPi
+	gcc -Wall -o $@ $< -lm -lwiringPi
 	-cp cosmic-array-log ../../bin
 
 clean:

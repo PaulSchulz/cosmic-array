@@ -23,7 +23,7 @@ void my_interrupt(int i) {
   clock_gettime(CLOCK_REALTIME,&tms);
   printf("%"PRIdMAX".%06ld %d\n",
 	 (intmax_t)tms.tv_sec,
-	 round(tms.tv_nsec/1000));
+	 (long int)round(tms.tv_nsec/1000));
 }
 
 void my_interrupt_0 (void) { my_interrupt(0); }
