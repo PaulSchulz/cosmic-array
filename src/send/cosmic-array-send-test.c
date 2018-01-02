@@ -1,6 +1,6 @@
 /* 
- * udpsend-test.c - A simple UDP client
- * usage: udpclient <host> <port> <sensor-name>
+ * cosmic-array-send-test.c - A simple UDP client
+ * usage: cosmic-array-send-test <host> <port> <sensor-name>
  *
  * Original Reference: https://www.cs.cmu.edu/afs/cs/academic/class/15213-f99/www/class26/
  */

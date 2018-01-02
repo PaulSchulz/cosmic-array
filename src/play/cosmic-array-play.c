@@ -1,6 +1,6 @@
 /* 
- * cosmicray-play.c - Play an audio file on a cosmicray event.
- * usage: cosmicray-play
+ * cosmic-array-play.c - Play an audio file on a cosmicray event.
+ * usage: cosmic-array-play
  */
 #include <stdio.h>
 #include <stdlib.h>
