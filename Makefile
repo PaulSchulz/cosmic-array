@@ -10,14 +10,14 @@ targets:
 	@echo "  version - Display software version."
 	@echo "  upgrade - Get new version from GitHub."
 
-post:
-	@echo "post: To be implemented."
-
 start:
 	@echo "start: To be implemented."
 
 stop:
 	@echo "stop: To be implemented."
+
+post:
+	bin/start-post.sh
 
 mute:
 	@sudo amixer -c 0 set PCM mute
