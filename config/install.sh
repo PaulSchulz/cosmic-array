@@ -9,11 +9,6 @@ if [ `arch` = "armv7l" ] || [ `arch` = "armv6l" ]; then
     # Set @reboot function
     crontab crontab.pi
 
-    # Set audio overlay to send audio to PWM pins. 
-    sudo bash -c "cat config.txt >> /boot/config.txt"
-
-    # Set Volume
-    sudo amixer -c 0 set PCM playback 97% unmute 
 fi
 
 sync; sync
