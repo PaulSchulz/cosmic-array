@@ -1,3 +1,2 @@
 cosmic-array-play: ./cosmic-array-play
-cosmic-array-send: ./cosmic-array-send 10.147.20.40 7001 `hostname`
-cosmic-array-log:  ./cosmic-array-log >> ../cosmic-array.log
+# cosmic-array-log:  ./cosmic-array-log >> ../cosmic-array.log

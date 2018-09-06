@@ -25,7 +25,7 @@ mute:
 unmute:
 	@sudo amixer -c 0 set PCM playback 70% unmute
 
-bin: src
+bin:
 	$(MAKE) -C src
 
 test:
@@ -37,3 +37,6 @@ version:
 
 upgrade:
 	@git pull
+
+.PHONY: bin
+

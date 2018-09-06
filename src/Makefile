@@ -21,6 +21,8 @@ SUBDIRS := \
   $(SUBDIRS-any) $(SUBDIRS-x86_64) $(SUBDIRS-armv7l) \
   clean
 
+all: $(SUBDIRS)
+
 any: $(SUBDIRS-any)
 
 x86_64: $(SUBDIRS-x86_64)
