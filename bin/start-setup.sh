@@ -4,17 +4,17 @@ cd ${0%/*}
 
 #######################################################################
 # Set GPIO mode
-/usr/bin/gpio mode 0 in
-/usr/bin/gpio mode 1 in
-/usr/bin/gpio mode 2 in
+# /usr/bin/gpio mode 0 in
+# /usr/bin/gpio mode 1 in
+# /usr/bin/gpio mode 2 in
 
-/usr/bin/gpio mode 0 tri
-/usr/bin/gpio mode 1 tri
-/usr/bin/gpio mode 2 tri
+# /usr/bin/gpio mode 0 tri
+# /usr/bin/gpio mode 1 tri
+# /usr/bin/gpio mode 2 tri
 
 #######################################################################
 # Set audio volume
-sudo amixer -c 0 set PCM playback 70% unmute >/dev/null 2>&1
+# sudo amixer -c 0 set PCM playback 70% unmute >/dev/null 2>&1
 
 #######################################################################
 # Set soundscape audio
